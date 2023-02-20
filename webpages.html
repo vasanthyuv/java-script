@@ -9,19 +9,20 @@
 
     <style>
         div.container {
-            height: 1080px;
+            height: 1090px;
             width: 100%;
-            background-image: url(asset/back5.jpg);
+            background-image: url(asset/samuel-scalzo-xyuYk9oLA8I-unsplash.jpg);
             background-size: cover;
             opacity: 0.90;
         }
 
+
         #but1 {
             height: 30px;
             width: 70px;
-            position: relative;
-            left: 1200px;
-            top: 20px;
+            position: fixed;
+            left: 1250px;
+            top: 30px;
             right: 3px;
             background-color: black;
 
@@ -31,7 +32,7 @@
         }
 
         #but1:hover {
-            background-color: #645CBB;
+            background-color: #F32C2C;
             color: white;
         }
 
@@ -42,10 +43,10 @@
 
 
         #li1 a {
-            position: absolute;
+            position: fixed;
             text-decoration: none;
             color: #F32C2C;
-            left: 1126px;
+            left: 1180px;
             top: 34px;
 
         }
@@ -59,19 +60,20 @@
 
 
 
+
         }
 
         #log {
-            position: absolute;
-            left: 1100px;
+            position: fixed;
+            left: 1154px;
             top: 31px;
         }
 
         #blog a {
             color: white;
-            position: absolute;
+            position: fixed;
 
-            left: 1050px;
+            left: 1090px;
             top: 32.9px;
 
         }
@@ -81,48 +83,145 @@
         }
 
         #mainlog1 {
-            position: absolute;
+            position: fixed;
             height: 35px;
             width: 100px;
             /* top: 100px;*/
             margin-top: 14px;
 
             top: 3px;
-            left: 100px;
-
-
-
+            left: 30px;
         }
 
-        .form1 {
+        #pre {
+
+            color: whitesmoke;
+            font-size: 60px;
+            font-family: 'Times New Roman', Times, serif;
             position: absolute;
-            top: 31px;
-            left: 960px;
-            background-color: black;
-            border: 2px white solid;
-            border-radius: 3px;
-            color: black ;
+            left: 0px;
+
+
         }
-        #opt{
-            background-color: black;
-            color:white;
+
+        #but2 {
+            height: 40px;
+            background-color: #F32C2C;
+            position: relative;
+            top: 200px;
+            left: 390px;
+            border: white 2px solid;
+            border-radius: 10px;
+
         }
-        #opt:hover{
-            background-color:  #645CBB;
+
+        #but2:hover {
+            background-color: black;
+            color: whitesmoke;
+        }
+
+        #hob {
+            border-color: 1px white solid;
+            border-radius: 7px;
+            position: absolute;
+            top: 390px;
+            height: 250px;
+
+        }
+
+        #hob:hover {
+            transform: scale(1.1);
+            /* background-color: white;*/
+            box-shadow: 0 0 20px #F32C2c;
+        }
+
+        #try {
+            border-color: 1px white solid;
+            border-radius: 7px;
+            position: absolute;
+            top: 390px;
+            left: 570px;
+            height: 250px;
+
+        }
+
+        #try:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px #F32C2c;
+
+        }
+
+        #port {
+            border-color: 1px white solid;
+            border-radius: 7px;
+            position: absolute;
+            top: 390px;
+            left: 1020px;
+            height: 250px;
+
+        }
+
+        #port:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px #F32C2C;
+
+        }
+        .news{
+            border: white 3px solid;
+            background-color:#434242;
+            display: inline-block;
+            position: absolute;
+            top: 665px;
+            
+            border-radius: 10px;
+        }
+        #journal{
+            position: relative;
+            bottom:  10px;
+            right: 47px;
+            font-size: 20px;
+            font-weight: bolder;
+            font-family:'Times New Roman', Times, serif;
+        }
+        #arti{
+            height: 140px;
+            margin-left: 20px;
+            
+            
         }
         
+        #find{
+            position:absolute ;
+            top: 900px;
+            left: 170px;
+            height: 30px;
+            border:#F32C2C  3px solid;
+            background-color: black;
+            border-radius: 6px;
+           
+            color: white;
+        }
+        #find:hover{
+            background-color: #F32C2C;
+            transform: scale(1.1);
+        }
+        #add{
+            position:absolute;
+            top: 1070px;
+            left: 645px;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <div class="head">
-            <button id="but1" type="button">SIGNUP</button>
+            <button type="button" id="but1">SIGNUP</button>
 
 
 
             <ul id="li1">
-                <img id="mainlog" src="">
+
                 <li><a href="https://app.hackthebox.com/password/forgot">Log in</a></li>
 
                 <li id="blog"><a href="https://app.hackthebox.com/password/forgot">blog</a></li>
@@ -130,17 +229,34 @@
                 <img id="mainlog1" src="asset/mainlog1.webp">
             </ul>
 
+            <pre id="pre">
+                The New Standard 
+                in Cyber Security
+            </pre>
+            <button id="but2" type="button">Learn more</button>
+
+            <a href="https://www.hackthebox.com"> <img id="hob" src="asset/hob.png"></a>
+
+            <a href="https://tryhackme.com"><img id="try" src="asset/try.png"></a>
+            <a href="https://portswigger.net"><img id="port" src="asset/port.png"></a>
 
 
+            <div class="news">
+                <img id="arti" src="asset/article.jpg">
+                <pre id="journal">
+                  <b> The Daily Swing</b> 
+                  
+                    
+                </pre>
+            </div>
+              <a href="https://portswigger.net/research"> <button id="find" type="button">Find out --></button></a> 
+            </div>
+
+            <p id="add" style="color: white;">
+                &#169 2023 Cyber Sec Ltd. 
+            </p>
         </div>
-        <form class="form1">
-            <select id="opt" name="course">
-                <option  value="val" disabled selected hidden></option>
-                <optgroup style="color: #F32C2C;" label="Cyber sec">
-                    <option id="home">Home</option>
-                    <option id="about">About</option>
-                </optgroup>
-        </form>
+
 
 </body>
 
