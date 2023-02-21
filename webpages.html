@@ -63,6 +63,8 @@
 
 
 
+
+
         }
 
         #log {
@@ -216,7 +218,7 @@
 
         #find {
             position: absolute;
-            top: 900px;
+            top: 870px;
             left: 170px;
             height: 30px;
             border: #F32C2C 3px solid;
@@ -236,25 +238,95 @@
             top: 1070px;
             left: 645px;
         }
-        #google{
+
+        #google {
             height: 30px;
             position: absolute;
             top: 1038px;
             left: 520px;
-            
+            transition-duration: 0.2s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+            transition-property: transform;
+
         }
-        #comp{
+
+        #comp {
             height: 30px;
             position: absolute;
             top: 1040px;
             left: 645px;
+            transition-duration: 0.2s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+            transition-property: transform;
 
         }
-        #red{
+
+        #red {
             height: 30px;
             position: absolute;
             top: 1039px;
             left: 830px;
+            transition-duration: 0.2s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+            transition-property: transform;
+
+
+        }
+
+        #news {
+            position: absolute;
+            height: 150px;
+            width: 150px;
+            bottom: 30px;
+            top: 700px;
+            left: 138PX;
+            border-radius: 50%;
+        }
+
+        #news:hover {
+            transform: scale(1.1)
+        }
+
+        #google:hover {
+            transform: scale(1.1);
+            transition: .5s ease;
+            transform: scale(1.1);
+
+
+
+            transition: .5s ease;
+        }
+
+        #comp:hover {
+            transform: scale(1.1);
+
+            transition: .5s ease;
+        }
+
+        #red:hover {
+            transform: scale(1.1);
+            transition: .5s ease;
+        }
+
+        #iframe {
+            position: absolute;
+            bottom: 50px;
+            top: 690px;
+            left: 500px;
+            transition-duration: 0.2s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+            transition-property: box-shadow;
+
+
+        }
+
+        #iframe:hover {
+            box-shadow: 0px 0px 50px 1px #F32C2C;
+            transition: .5s ease;
 
 
         }
@@ -289,23 +361,30 @@
             <a href="https://portswigger.net"><img id="port" src="asset/port.png"></a>
 
 
-            <div class="news">
-                <img id="arti" src="asset/article.jpg">
+            <!---- <div class="news">
+              <img id="arti" src="asset/article.jpg">
                 <pre id="journal">
-                  <b> The Daily Swing</b> 
-                  
-                    
-                </pre>
-            </div>
-            <a href="https://portswigger.net/research"> <button id="find" type="button">Find out --></button></a>
-        </div>
+                  <b> The Daily Swing</b> -->
 
-        <p id="add" style="color: white;">
-            &#169 2023 Cyber Sec Ltd.
-        </p>
-        <img id="google" src="asset/google.png">
-        <img id="comp" src="asset/comptia.png">
-        <img id="red" src="asset/red.svg">
+
+            </pre>
+        </div>
+        <a href="https://portswigger.net/research"> <button id="find" type="button">Find out --></button></a>
+    </div>
+    <img id="news" src="asset/newss.jpg">
+
+    <p id="add" style="color: white;">
+        &#169 2023 Cyber Sec Ltd.
+    </p>
+    <a href="www.google.com"><img id="google" src="asset/google.png"></a>
+    <a href="https://www.comptia.org/"><img id="comp" src="asset/comptia.png"></a>
+    <a href="https://www.redhat.com/en"><img id="red" src="asset/red.svg"></a>
+
+    <iframe  id="iframe" width="560" height="315" src="https://www.youtube.com/embed/NXpeXn0SKPU"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
     </div>
 
 
