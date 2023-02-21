@@ -311,9 +311,10 @@
             transition: .5s ease;
         }
 
-        #iframe {
+        #vedio {
             position: absolute;
             bottom: 50px;
+            
             top: 690px;
             left: 500px;
             transition-duration: 0.2s;
@@ -324,7 +325,7 @@
 
         }
 
-        #iframe:hover {
+        #vedio:hover {
             box-shadow: 0px 0px 50px 1px #F32C2C;
             transition: .5s ease;
 
@@ -380,10 +381,16 @@
     <a href="https://www.comptia.org/"><img id="comp" src="asset/comptia.png"></a>
     <a href="https://www.redhat.com/en"><img id="red" src="asset/red.svg"></a>
 
-    <iframe  id="iframe" width="560" height="315" src="https://www.youtube.com/embed/NXpeXn0SKPU"
+   <!---- <iframe  id="iframe" width="560" height="315" src="https://www.youtube.com/embed/NXpeXn0SKPU"
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
+        allowfullscreen></iframe>-->
+
+        <video id="vedio" width="370" height="240" poster="asset/pexels-tima-miroshnichenko-5380610.jpg" controls>
+            <source src="asset/videoplayback.mp4" type="video/mp4">
+            
+            Your browser does not support the video tag.
+         </video>
 
     </div>
 
