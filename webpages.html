@@ -29,6 +29,7 @@
             color: white;
             border: white 2px solid;
             border-radius: 4px;
+            z-index: 1;
         }
 
         #but1:hover {
@@ -48,6 +49,7 @@
             color: #F32C2C;
             left: 1180px;
             top: 34px;
+            z-index: 1;
 
         }
 
@@ -67,6 +69,7 @@
             position: fixed;
             left: 1154px;
             top: 31px;
+            z-index: 1;
         }
 
         #blog a {
@@ -88,6 +91,7 @@
             width: 100px;
             /* top: 100px;*/
             margin-top: 14px;
+            z-index: 1;
 
             top: 3px;
             left: 30px;
@@ -126,11 +130,17 @@
             position: absolute;
             top: 390px;
             height: 250px;
+            transition-duration: 0.2s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+            transition-property: transform;
+
 
         }
 
         #hob:hover {
             transform: scale(1.1);
+            transition: .4s ease;
             /* background-color: white;*/
             box-shadow: 0 0 20px #F32C2c;
         }
@@ -142,11 +152,16 @@
             top: 390px;
             left: 570px;
             height: 250px;
+            transition-duration: 0.2s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+            transition-property: transform;
 
         }
 
         #try:hover {
             transform: scale(1.1);
+            transition: .4s ease;
             box-shadow: 0 0 20px #F32C2c;
 
         }
@@ -158,57 +173,90 @@
             top: 390px;
             left: 1020px;
             height: 250px;
+            transition-duration: 0.2s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+            transition-property: transform;
 
         }
 
         #port:hover {
             transform: scale(1.1);
             box-shadow: 0 0 20px #F32C2C;
+            transition: .4s ease;
 
         }
-        .news{
+
+        .news {
             border: white 3px solid;
-            background-color:#434242;
+            background-color: #434242;
             display: inline-block;
             position: absolute;
             top: 665px;
-            
+
             border-radius: 10px;
         }
-        #journal{
+
+        #journal {
             position: relative;
-            bottom:  10px;
+            bottom: 10px;
             right: 47px;
             font-size: 20px;
             font-weight: bolder;
-            font-family:'Times New Roman', Times, serif;
+            font-family: 'Times New Roman', Times, serif;
         }
-        #arti{
+
+        #arti {
             height: 140px;
             margin-left: 20px;
-            
-            
+
+
+
         }
-        
-        #find{
-            position:absolute ;
+
+        #find {
+            position: absolute;
             top: 900px;
             left: 170px;
             height: 30px;
-            border:#F32C2C  3px solid;
+            border: #F32C2C 3px solid;
             background-color: black;
             border-radius: 6px;
-           
+
             color: white;
         }
-        #find:hover{
+
+        #find:hover {
             background-color: #F32C2C;
             transform: scale(1.1);
         }
-        #add{
-            position:absolute;
+
+        #add {
+            position: absolute;
             top: 1070px;
             left: 645px;
+        }
+        #google{
+            height: 30px;
+            position: absolute;
+            top: 1038px;
+            left: 520px;
+            
+        }
+        #comp{
+            height: 30px;
+            position: absolute;
+            top: 1040px;
+            left: 645px;
+
+        }
+        #red{
+            height: 30px;
+            position: absolute;
+            top: 1039px;
+            left: 830px;
+
+
         }
     </style>
 </head>
@@ -249,13 +297,16 @@
                     
                 </pre>
             </div>
-              <a href="https://portswigger.net/research"> <button id="find" type="button">Find out --></button></a> 
-            </div>
-
-            <p id="add" style="color: white;">
-                &#169 2023 Cyber Sec Ltd. 
-            </p>
+            <a href="https://portswigger.net/research"> <button id="find" type="button">Find out --></button></a>
         </div>
+
+        <p id="add" style="color: white;">
+            &#169 2023 Cyber Sec Ltd.
+        </p>
+        <img id="google" src="asset/google.png">
+        <img id="comp" src="asset/comptia.png">
+        <img id="red" src="asset/red.svg">
+    </div>
 
 
 </body>
